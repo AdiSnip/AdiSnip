@@ -1,0 +1,302 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ background-color: black;
+ box-sizing: border-box;
+ font-family: Sans-Serif;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  
+}
+a{
+  text-decoration: none;
+}
+.navbar{
+  width: 100vw;
+  height: 70px;
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.sidebtn{
+  height: 75px;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+}
+.sidebtn a{
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logosec{
+  height: 65px;
+  width: 45vw;
+  display: flex;
+  position: relative;
+  background-color: black;
+}
+#logoback1{
+  height: 65px;
+  width: 200px;
+  position: relative;
+  right: 100px;
+  background-color: cyan;
+  transform: rotate(-45deg);
+}
+#logoback2{
+  height: 65px;
+  width: 80%;
+  left: 30%;
+  background: linear-gradient(to right, #000000, #7d7d7d);
+  position: absolute;
+  right: 0px;
+
+}
+#logo{
+  position: absolute;
+  right: 20px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  background-color: transparent;
+  color: white;
+}
+.backvideo{
+  height: 830px;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+}
+.background{
+  height: 830px;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+}
+
+#design{
+  
+  top: 683px;
+  width: 100vw;
+  height: 70px;
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#logosec2{
+  flex-direction: row-reverse;
+}
+#design1{
+  height: 65px;
+  width: 200px;
+  position: relative;
+  left: 100px;
+  background-color: cyan;
+  transform: rotate(-45deg);
+}
+#design2{
+  z-index: 1000;
+  height: 65px;
+  width: 80%;
+  left: 0%;
+  background: linear-gradient(to right, #7d7d7d, #000000);
+  position: absolute;
+  right: 0px;
+}
+.bodybtn{
+  position: absolute;
+  z-index: 13;
+  height: 830px;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Balthazar";
+}
+.bodybtn h3{
+  position: relative;
+  color: white;
+  background-color: transparent;
+  font-size: 8vw;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+.bodybtn button{
+  position: relative;
+  height: 50px;
+  width: 400px;
+  background: linear-gradient(to right, #cdffd8, #94b9ff);
+  border-radius: 50px;
+  border: 0px;
+}
+.bodybtn a{
+  background-color: transparent;
+  color: black;
+  font-family: "Balthazar";
+  font-size: 25px;
+  
+}
+.video{
+  height: 830px;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+}
+.video:after{
+  height: 830px;
+  width: 100vw;
+  content: "";
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  opacity: 0.3;
+}
+
+/* hamberger section */
+
+.button{
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  z-index: 1100;
+  position: absolute;
+  top: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box{
+  height: 10%;
+  width: 90%;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+  transition-duration: 0.5s;
+}
+.box1{
+  margin-top: 40%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  background-color: black;
+  
+}
+.box2{
+  display: none;
+}
+.box3{
+  background-color: black;
+  margin-bottom: 40%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+/* mobilemenu */
+.mobmenu{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  z-index: 1050;
+  display: flex;
+  background-color: cyan;
+  left: -100vw;
+  transition-duration: 0.5s;
+}
+.slide{
+  transform: translateX(100%);
+}
+.container{
+  color: white;
+  z-index: 100;
+  position: absolute;
+  top: 810px;
+}
+
+
+/* resposive design */
+
+@media (max-width:900px){
+  .sidebtn{
+    display:none;
+  }
+  .logosec{
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: row-reverse;
+    transform: rotate(180deg);
+  }
+  .button{
+    display: flex;
+    right: 20px;
+  }
+  #logo{
+    transform: rotate(180deg);
+  }
+  .bodybtn h3{
+    width: 60vw;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 200px;
+  }
+  .bodybtn button{
+    left: 10px;
+    position: absolute;
+    width: 60vw;
+    top: 280px;
+  }
+  .bodybtn{
+    justify-content: left;
+  }
+  .background{
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  .bodybtn{
+    height: 800px;
+  }
+ .video{
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+ }
+ .backvideo{
+   width: 500%;
+   height: 50vh;
+   left: -200vw;
+   /* transform: translateY(-100px); */
+   position: absolute;
+   top: 0px;
+ }
+ #design{
+   position: absolute;
+   top: 60vh;
+ }
+ .container{
+  color: white;
+  z-index: 100;
+  position: absolute;
+  top: 600px;
+}
+}
